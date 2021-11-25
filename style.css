@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'GothamPro';
+    src: local('GothamProLight'),
+        url('../Kitfort/Font/GothamPro/GothamProLight/GothamProLight.ttf') format("ttf"),
+        url('../Kitfort/Font/GothamPro/GothamProLight/GothamProLight.eot') format("eot"),
+        url('../Kitfort/Font/GothamPro/GothamProLight/GothamProLight.woff') format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap; 
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    min-width: 1280px; 
+    font-family: 'GothamPro';
+    margin-top: 0;
+}
+ 
+
+
+
+/* @media (max-width:1280px) {
+    
+}
+
+@media (max-width:767px) {
+   
+}
+
+@media screen and (max-width:320px) {
+
+    .card {
+        width: 100%;
+    }
+    .card {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px,));
+    }
+}  */
+
+
+
+.header {
+    background-image: url(../Kitfort/IMG/Path\ 2865.svg);
+    background-position: left 285px top 35px ;
+    background-repeat: no-repeat;
+    padding-left: 55px;
+    align-items: center;
+    position: relative;
+}
+
+
+.scrol-btn {
+    padding-left: 900px;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.left, .right {
+    margin-top: 10px;
+    border: 1px solid #F6F6F6;
+    border-color: #F6F6F6;
+    border-radius: 50%;
+    padding: 4px 5px;
+}
+
+.star {
+    padding-left: 300px;
+}
+.flex {
+    display: flex;
+}
+
+.span {
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.block {
+    display: block;
+}
+
+.imgblock {
+    margin-right: 20px;
+}
+
+.imgblock img {
+    margin-left: 25px;
+    padding-top: 20px ;  
+}
+
+.first {
+    margin-left: 55px;
+}
+    
+.card:not(:last-child) {
+    margin-right: 30px;
+}
+
+.card {
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 387px;
+    width: 270px;
+}
+
+.imgblock span {
+    left: 0;
+    position: relative;
+    bottom: 160px;
+}
+
+.span1 {
+    margin-left: 20px;
+    border-radius: 5px;
+    color: #3DDC97;
+    background: #EEFCF6;
+    padding: 5px 10px;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.span2 {
+    border-radius: 5px;
+    color: #E49F62;
+    background: #FCF4ED;
+    padding: 5px 10px;
+    width: 100px;
+    margin: 0px 5px;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.control {
+    padding-left: 20px;
+    color: #888888;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.condition {
+    padding-left: 20px;
+    color: #444444;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.rating {
+    padding-left: 20px;
+    color: #00ADEF;
+    font-size: 13px;
+    line-height: 15px;
+    margin-top: 0;
+}
+
+.price {
+    align-items: center;
+}
+
+.top-price {
+    padding-left: 20px;
+    color: #444444;
+    font-size: 19px;
+    line-height: 23px;
+    margin-right: 20px;
+}
+
+.last-price {
+    color: #888888;
+    font-size: 13px;
+    line-height: 15px;
+    padding-top: 7px;
+}
+
+.btn {
+    background: #00ADEF;
+    border-radius: 5px;
+    padding: 14px 36px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.add-wish {
+    padding-right: 17px;
+} 
+
+.wish {
+    margin-left: 17px;
+    padding-right: 40px;
+    background-image: url('../Kitfort/IMG/Vector\ \(Stroke\).svg');
+    background-repeat: no-repeat;
+}
+
+.share {
+    padding-right: 20px;
+    background-image: url('../Kitfort/IMG/Vector\ \(Stroke\)\ 2.svg');
+    background-repeat: no-repeat;
+}
+
+.add-basket {
+    padding-left: 20px;
+    align-items: center;
+} 
