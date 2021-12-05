@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netwrix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <img src="../IMG/Netwrix_logo_120x25.svg" alt="logo">
+        </div>
+        <main class="search">
+            <h1 class="name">Netwrix Partner Locator</h1>
+            <p class="slogan">Hundreds of Netwrix partners around the world are standing by to help you.<br>
+            With our Partner Locator you can easily find the list of authorized partners in your area.
+            </p>
+            <form>
+                <input type="text" placeholder="Search by company name or adress.." class="top-form">
+                <button type="submit"></button>
+            </form>
+            <select id="type-selector" class="form-select" name="Type">
+                <option value="Type" disabled selected>Type</option>
+                <option value="Distributor">Distributor</option>
+                <option value="Elite">Elite</option>
+                <option value="MSP">MSP</option>
+                <option value="Preferred">Preferred</option>
+                <option value="Premium">Premium</option>
+            </select>
+            <select class="form-select2" name="Country">
+                <option value="Type" disabled selected>Country</option>
+            </select>
+            <select class="form-select3" name="State">
+                <option value="Type" disabled selected>State</option>
+            </select>
+        </main>
+        <div id="result-container">
+
+        </div>
+    </header>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+    <script>
+        $('#type-selector').change(function() {
+            $.get( "/?type=" + $('#type-selector').val(), function( data ) {
+                let json = JSON.parse(data)
+                let itemsHtml = ''
+
+                if (json.length == 0) {
+                    itemsHtml = '<h2>Your search params did not match any partners. Please try different search</h2>'
+                } else {
+
+                    json.forEach(function (element) {
+                        itemsHtml += `
+                        <div class="result">
+                                <div  class="logotip">
+                            <img src="${element.logo}"><br>
+                                </div>
+                            <div class="name-co">
+                                <div class="Name">
+                            ${element.company}<br>
+                                </div>
+                                <div class="adress">
+                            ${element.address}<br>
+                                </div>
+                            </div>
+                            <div class="contacts">
+                                <div class="site">
+                            <a href="${element.website}">Website</a><br>
+                                </div>
+                                <div class="number">
+                            ${element.phone}<br>
+                                </div>
+                            </div>
+                            <div class="status">
+                            ${element.status}<br>
+                            </div>
+                        </div>
+                    `
+                        console.log(element)
+                    })
+                }
+
+                $('#result-container').html(itemsHtml)
+            });
+        })
+    </script>
+</html>

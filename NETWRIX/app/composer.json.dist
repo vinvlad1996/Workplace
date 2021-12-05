@@ -1,0 +1,12 @@
+{
+    "require": {
+    },
+    "require-dev": {
+    },
+    "autoload": {
+    },
+    "autoload-dev": {
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

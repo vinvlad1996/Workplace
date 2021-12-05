@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1567px;
+}
+
+.header-logo {
+    padding-top: 32px;
+    padding-left: 120px;
+}
+
+.search {
+    text-align: center;
+    padding-top: 120px;
+    margin-top: 30px;
+    min-height: 573px;
+    background-image: url(/IMG/bg_large_1\ 1.jpg);
+    background-repeat: no-repeat;
+}
+
+.name {
+    font-size: 46px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.slogan {
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+form {
+    padding-top: 48px;
+    width: 621px;
+}
+
+.top-form {
+    margin-left: 410px;
+}
+
+input, button {
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+input {
+    width: 100%;
+    height: 42px;
+    background: #FFFFFF;
+    padding-left: 15px;
+}
+
+button {
+    height: 18px;
+    width: 15px;
+    background-image: url(/web/public/IMG/search-ico.svg);
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.form-select {
+    width: 209px;
+    height: 38px;
+    background: rgba(0, 0, 0, 0.0001);
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.form-select2 {
+    width: 200px;
+    height: 38px;
+    background: rgba(0, 0, 0, 0.0001);
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.form-select3 {
+    width: 200px;
+    height: 38px;
+    background: rgba(0, 0, 0, 0.0001);
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.result {
+    display: flex;
+    padding-bottom: 30px;
+    padding-top:30px;
+    max-width: 1110px;
+    border: 1px solid #F2F2F2;
+    margin-left: 230px;
+    padding-left: 78px;
+}   
+
+.logotip {
+   width: 22.5%;
+}
+
+.name-co {
+    width: 35%;
+}
+
+.Name {
+    font-size: 21px;
+    line-height: 32px;
+    color:#354556;
+}
+
+.adress {
+    font-size: 14px;
+    line-height: 24px;
+    color: #354556;
+}
+
+.contacts {
+    width: 13.5%;
+    padding-right: 10px;
+    height: 58px;
+    border-right: 1px solid #ced5d9;
+}
+
+.number {
+    font-size: 13px;
+    line-height: 32px;
+    color: #354556;
+}
+
+.site {
+    font-size: 14px;
+    line-height: 32px;
+    color: #0068DA;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 13px;
+    line-height: 32px;
+    font-weight: 600;
+    color: #354556;
+    width: 15%;
+}
+
+
+
+/* @media screen and (min-width: 1260px) {
+     { width: 1240px;}
+}
+
+@media (min-width: 768px) {
+     { width: 750px;}
+} */
