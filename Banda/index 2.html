@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrazyBeer</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+	
+	<div class="container">
+		<div class="waveWrapper waveAnimation">
+			<div class="waveWrapperInner bgTop">
+				<div id="brand"></div>
+				<main class="parametr">
+				<div id="name"></div>
+				<div id="style"></div>
+				<div id="hop"></div>
+				<div id="yeast"></div>
+				<div id="malts"></div>
+				<div id="ibu"></div>
+				<div id="alcohol"></div>
+				<div id="blg"></div>
+				</main>
+				<footer>
+					<ul class="type">
+						<li class="type-item">Beer name</li>
+						<li class="type-item">Sort of beer</li>
+						<li class="type-item">Hop of beer</li>
+						<li class="type-item">Yeast of beer</li>
+						<li class="type-item">Malts of beer</li>
+						<li class="type-item">IBU-International Bitterness Unit</li>
+						<li class="type-item">Alcohol</li>
+						<li class="type-item">BLG</li>
+					</ul>
+				</footer>
+			  	<div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+			</div>
+			<div class="waveWrapperInner bgMiddle">
+			  <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+			</div>
+			<div class="waveWrapperInner bgBottom">
+			  <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+			</div>
+		</div>
+	</div>
+
+	
+	<script type="text/javascript">
+		var response = httpGet("https://random-data-api.com/api/beer/random_beer")
+		var responseObj = JSON.parse(response)
+	
+		document.querySelector('#brand').innerHTML = responseObj.brand 
+		document.querySelector('#name').innerHTML = responseObj.name
+		document.querySelector('#style').innerHTML = responseObj.style
+		document.querySelector('#hop').innerHTML = responseObj.hop
+		document.querySelector('#yeast').innerHTML = responseObj.yeast
+		document.querySelector('#malts').innerHTML = responseObj.malts
+		document.querySelector('#ibu').innerHTML = responseObj.ibu
+		document.querySelector('#alcohol').innerHTML = responseObj.alcohol
+		document.querySelector('#blg').innerHTML = responseObj.blg
+
+		function httpGet(theUrl)
+		{
+			var xmlHttp = new XMLHttpRequest();
+			xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+			xmlHttp.send( null );
+			return xmlHttp.responseText;
+		}
+	</script>
+	</body>
+	</html>
