@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color:#FFEFD5;
+    /* max-width: 1200px; */
+}
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.flex {
+    display: flex;
+}
+
+.container {
+    /* max-width: 1200px; */
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*header*/
+
+.header-list-item:not(:last-child) {
+    margin-right: 65px;
+}
+
+.header-container {
+    align-items: center;
+}
+
+.header-logo {
+    margin-right: auto;
+}
+
+.header-nav {
+    margin-right: 50px;
+}
+
+.header-link {
+    text-decoration: none;
+    font-weight: 600;
+    color: #1c1c1c;
+    font-size: 15px;
+}
+
+/*main*/
+
+.container2 {
+    text-align: center;
+    /* min-width: 1420px; */
+    background: url(../Banda/IMG/zal.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 600px;
+}
+
+h1 {
+    padding-top: 100px;
+    color:#FFFFFF;
+    text-align: center;
+}
+
+#text {
+    font: 20px Arial, Verdana, sans-serif;
+    border: 5px inset #b8860b;
+    border-radius: 15px;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 15px;
+    min-height: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    overflow: auto;
+    line-height: 29px
+}
+  
+.main-button {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    justify-content: center;
+    padding: 20px;
+    border: 5px outset gray;
+    border-radius: 15px;
+    color: #232323;
+}
+
+
+/*footer*/
+
+.footer {
+    padding: 42px 0;
+}
+
+.footer-copy {
+    font-size: 12px;
+    line-height: 16px;
+    color: #1c1c1c;
+}
+
+.footer-link {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #1c1c1c;
+    text-decoration: none;
+}
+.footer-container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-left,
+.footer-right {
+    align-items: center;
+}
+
+.footer-logo {
+    margin-right: 25px;
+}
+
+.footer-item:not(:last-child) {
+    margin-right: 28px;
+}
+
+.footer-nav {
+    margin-right: 56px;
+}
+
+.social-link  {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.social-item:not(:last-child) {
+    margin-right: 32px;
+}
+
+.social-link-face {
+    background-image: url('../Banda/IMG/FB_icon-icons.com_65484.svg');
+}
+
+.social-link-insta {
+    background-image: url('../Banda/IMG/instagram_f_icon-icons.com_65485.svg');
+}
+
+.social-link-youtube {
+    background-image: url('../Banda/IMG/YOUTUBE_icon-icons.com_65487.svg');
+}
+
+.social-link-google {
+    background-image: url('../Banda/IMG/GOOGLE_icon-icons.com_65492.svg');
+}
+
+.social-link-twit {
+    background-image: url('../Banda/IMG/TWITTER_icon-icons.com_65486.svg');
+}
+
+@media (max-width: 360px) {
+
+    #text {
+        font: 7px Arial, Verdana, sans-serif;
+    }
+
+    .container2 {
+        text-align: center;
+        background: url(../Banda/IMG/depositphotos_212560468-stock-photo-close-view-beer-bottle-tabletop.jpeg);
+        background-repeat: no-repeat;
+        background-size: 450px 800px;
+    }
+
+    .header-container {
+        display: flex;
+    }
+
+    .header-link {
+        text-decoration: none;
+        font-weight: 200;
+        color: #1c1c1c;
+        font-size: 10px;
+    }
+
+    .header-logo {
+        display: none;
+    }
+
+    .footer-logo, .footer-copy, .footer-nav {
+        display: none;
+    }
+
+    .header-nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header-list {
+        display: list-item;
+        padding-left: 120px;
+    }
+
+    .social {
+        align-items: center;
+        padding-right: 20px;
+    }
+}
