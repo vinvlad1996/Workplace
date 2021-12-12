@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="qwerty"></div>
+	<script type="text/javascript">
+		var response = httpGet("https://random-data-api.com/api/beer/random_beer")
+		var responseObj = JSON.parse(response)
+	
+		document.querySelector('#qwerty').innerHTML = responseObj.brand
+	
+		function httpGet(theUrl)
+		{
+			var xmlHttp = new XMLHttpRequest();
+			xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+			xmlHttp.send( null );
+			return xmlHttp.responseText;
+		}
+	</script>
+	</body>
+	</html>
