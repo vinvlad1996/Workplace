@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cedro</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header--wrap">
+        <img src="../cedro/IMG/logo (1).svg" class="header--logo" alt="CEDRO" width="91" height="32">
+        <nav class="header--nav">
+          <ul class="header--list">
+            <li class="header--item">
+              <a href="" class="header--link">
+                Пигменты
+                <svg xmlns="http://www.w3.org/2000/svg" class="header--icon" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                  <path d="M1 1L3.5 3.5L6 6L11 1" stroke="#21242E" stroke-width="1.5">
+                </svg>
+              </a>
+            </li>
+            <li class="header--item">
+              <a href="" class="header--link">
+                Товары для ПМ
+                <svg xmlns="http://www.w3.org/2000/svg" class="header--icon" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                  <path d="M1 1L3.5 3.5L6 6L11 1" stroke="#21242E" stroke-width="1.5"/>
+                </svg>
+              </a>
+            </li>
+            <li class="header--item">
+              <a href="" class="header--link">Ремувер</a>
+            </li>
+            <li class="header--item">
+              <a href="" class="header--link">Акции</a>
+            </li>
+            <li class="header--item">
+              <a href="" class="header--link">Обучение</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="tel:+88005553535" class="header--phone">
+          <svg xmlns="http://www.w3.org/2000/svg" class="header--icon" width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M12.6637 10H10.1579C10.1579 10 9.80262 12.7433 10.1579 14.4408C10.5993 16.5495 11.1016 17.8516 12.625 19.375C14.1484 20.8984 15.4505 21.4007 17.5592 21.8421C19.2567 22.1974 22 21.8421 22 21.8421V19.3363C22 18.4754 21.4491 17.7111 20.6325 17.4389L19.5094 17.0645C19.2293 16.9712 18.9209 17.069 18.7459 17.3069C18.1043 18.1787 16.8226 18.2379 16.1034 17.4288L14.6653 15.8109C14.0139 15.0782 14.0561 13.9623 14.7609 13.2808C14.9633 13.0851 15.0355 12.7906 14.9464 12.5234L14.5611 11.3675C14.2889 10.5509 13.5246 10 12.6637 10Z" stroke="#D0BC7A" stroke-width="1.5"/>
+          </svg>
+          8 (800) 555-35-35
+        </a>
+        <ul class="header--action-list">
+          <li class="header--action-item">
+            <a class="header--action-link"href="#" aria-label="Поиск">
+              <svg xmlns="http://www.w3.org/2000/svg" class="header--icon" width="32"  height="32" viewBox="0 0 32 32"  fill="none">
+                <path d="M18.8889 18.9762C19.98 18.0345 20.6667 16.666 20.6667 15.1429C20.6667 12.3025 18.2789 10 15.3333 10C12.3878 10 10 12.3025 10 15.1429C10 17.9832 12.3878 20.2857 15.3333 20.2857C16.6993 20.2857 17.9453 19.7905 18.8889 18.9762ZM18.8889 18.9762L22 22" stroke="#D0BC7A" stroke-width="1.5"/>
+              </svg>
+            </a>
+          </li>
+          <li class="header--action-item">
+            <a class="header--action-link" href="#" aria-label="Избранные">
+              <svg xmlns="http://www.w3.org/2000/svg" class="header--icon" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M21.9205 11.0609C21.5784 10.7246 21.1722 10.4578 20.7252 10.2757C20.2782 10.0937 19.799 10 19.3151 10C18.8312 10 18.3521 10.0937 17.905 10.2757C17.458 10.4578 17.0518 10.7246 16.7098 11.0609L15.9998 11.7586L15.2899 11.0609C14.5989 10.3818 13.6617 10.0004 12.6845 10.0004C11.7073 10.0004 10.7702 10.3818 10.0792 11.0609C9.38819 11.7399 9 12.6609 9 13.6212C9 14.5816 9.38819 15.5026 10.0792 16.1816L10.7891 16.8793L15.9998 22L21.2105 16.8793L21.9205 16.1816C22.2627 15.8454 22.5342 15.4463 22.7194 15.007C22.9047 14.5677 23 14.0968 23 13.6212C23 13.1457 22.9047 12.6748 22.7194 12.2355C22.5342 11.7962 22.2627 11.3971 21.9205 11.0609V11.0609Z" stroke="#D0BC7A" stroke-width="1.5"/>
+              </svg>
+            </a>
+          </li>
+          <li class="header--action-item">
+            <a class="header--action-link" href="#" aria-label="Корзина">
+              <svg xmlns="http://www.w3.org/2000/svg" class="header--icon" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M12.4667 13.3333H10C9.44772 13.3333 9 13.781 9 14.3333V21C9 21.5523 9.44772 22 10 22H21C21.5523 22 22 21.5523 22 21V14.3333C22 13.781 21.5523 13.3333 21 13.3333H18.5333M12.4667 13.3333V16.3667M12.4667 13.3333H18.5333M12.4667 13.3333V12.0333C12.4667 10.3581 13.8247 9 15.5 9V9C17.1753 9 18.5333 10.3581 18.5333 12.0333V13.3333M18.5333 16.3667V13.3333" stroke="#D0BC7A" stroke-width="1.5"/>
+              </svg>
+            </a>
+          </li>
+          <li class="header--action-item">
+            <a class="header--action-link" href="#" aria-label="Профиль">
+              <svg xmlns="http://www.w3.org/2000/svg" class="header--icon header--icon-user" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M13.2502 13.4007C13.2502 11.9254 14.4695 10.7084 15.9998 10.7084C17.5301 10.7084 18.7494 11.9254 18.7494 13.4007C18.7494 14.876 17.5301 16.093 15.9998 16.093C14.4695 16.093 13.2502 14.876 13.2502 13.4007ZM15.9998 9.20837C13.6646 9.20837 11.7502 11.0737 11.7502 13.4007C11.7502 15.7277 13.6646 17.593 15.9998 17.593C18.3351 17.593 20.2494 15.7277 20.2494 13.4007C20.2494 11.0737 18.3351 9.20837 15.9998 9.20837ZM12.375 22.6657C12.375 21.1787 13.5804 19.9734 15.0673 19.9734H16.9317C18.4186 19.9734 19.624 21.1787 19.624 22.6657H21.124C21.124 20.3503 19.247 18.4734 16.9317 18.4734H15.0673C12.752 18.4734 10.875 20.3503 10.875 22.6657H12.375Z" fill="#D0BC7A"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <button class="header--nav-button" type="button" aria-label="Открыть меню">
+        </button>
+      </div>
+    </header>
+    <div class="wrap">
+      <section class="sidebar">
+        <nav class="sidebar--nav">
+          <ul class="sidebar--list">
+            <li class="sidebar--item sidebar--item-opened">
+              <a class="sidebar--link" href="#">Профиль</a>
+            </li>
+            <li class="sidebar--item">
+              <a class="sidebar--link" href="#">Мои заказы</a>
+            </li>
+            <li class="sidebar--item">
+              <a class="sidebar--link" href="#">выход</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <main class="main">
+        <h2 class="main--title">Профиль</h2>
+        <form class="main--form" action="submit">
+          <div class="main--form-wrap">
+            <h3 class="main--subtitle">Данные профиля</h3>
+            <label class="main--label" for="name">ФИО</label>
+            <input class="main--input" type="text" id="name" name="name" placeholder="Алексеева Ульяна Евгеньевна">
+            <label class="main--label" for="email">Почта</label>
+            <input class="main--input" type="email" id="email" name="email" placeholder="pochta07@mail.ru">
+            <label class="main--label" for="tel">Телефон</label>
+            <input class="main--input" type="tel" id="tel" name="tel" placeholder="+7 (999) 999-99-99">
+            <label class="main--label" for="account-name">Имя аккаунта</label>
+            <input class="main--input" type="text" id="account-name" name="account-name" placeholder="Alex Y.E.">
+            <label class="main--label" for="insta">Профиль в инстаграм</label>
+            <input class="main--input main--input-success" type="text" id="mail" name="mail" placeholder="@Alex-YE">
+            <label class="main--label" for="address">Адрес доставки</label>
+            <input class="main--input main--input-error" type="text" id="address" name="address" placeholder="Город, улица, дом">
+          </div>
+          <div class="main--form-wrap">
+            <h3 class="main--subtitle">Изменить пароль</h3>
+            <label class="main--label" for="old-password">Старый пароль
+              <button type="button" class="main--password-control" aria-label="Показать пароль"></button>
+            </label>
+            <input class="main--input" type="password" id="old-password" name="old-password" placeholder="•••••••••••••••••••">
+            <label class="main--label" for="new-password">Новый пароль
+              <button class="main--password-control main--password-control-opened" type="button" aria-label="Показать пароль"></button>
+            </label>
+            <input class="main--input" type="text" id="new-password" name="new-password" placeholder="Введите новый пароль">
+          </div>
+          <div class="main--form-wrap">
+            <button class="main--form-submit" type="submit">
+              Сохранить изменения
+            </button>
+          </div>
+        </form>
+      </main>
+    </div>
+    <section class="sale">
+      <div class="sale--header">
+        <h2 class="sale--title">
+          <span class="sale--title-gold">Тренды</span> сезона
+        </h2>
+        <a class="sale--link" href="#">
+          Перейти в каталог
+          <svg xmlns="http://www.w3.org/2000/svg" class="sale--icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M7.24475 11L10.2448 8L7.24475 5" stroke="#21242E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="0.75" y="0.75" width="14.5" height="14.5" rx="7.25" stroke="#21242E" stroke-width="1.5"/>
+          </svg>
+        </a>
+      </div>
+      <ul class="sale--list">
+        <li class="sale--item sale--item-sale">
+          <button class="sale--like-btn" aria-label="Добавить в избранные">
+            <svg xmlns="http://www.w3.org/2000/svg" class="sale--icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M16.8398 3C15.093 3 13.5616 3.77893 12.4113 5.25262C12.2579 5.44917 12.1212 5.64579 12 5.83623C11.8788 5.64575 11.7421 5.44917 11.5887 5.25262C10.4384 3.77893 8.90701 3 7.16016 3C3.8602 3 1.5 5.7631 1.5 9.07868C1.5 12.8699 4.60722 16.4429 11.575 20.664C11.7056 20.7431 11.8528 20.7827 12 20.7827C12.1472 20.7827 12.2944 20.7431 12.425 20.664C19.3928 16.443 22.5 12.8699 22.5 9.07872C22.5 5.76486 20.1417 3 16.8398 3Z" fill="#E4E4E4"/>
+            </svg>
+          </button>
+          <a href="#" class="sale--item-link">
+            <div class="sale--img-wrap">
+              <img src="../cedro/IMG/image 24.png" class="sale--img" alt="" width="256" height="256">
+            </div>
+            <div class="sale--description-wrap">
+              <h3 class="sale--name">Brown to Blonde</h3>
+              <p class="sale--description">Пигмент для бровей</p>
+              <p class="sale--description">12 ml.</p>
+              <div class="sale--wrap-price">
+                <p class="sale--price">1 500 ₽</p>
+                <p class="sale--price sale--price-old">3 000 ₽</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="sale--item sale--item-promo">
+          <button class="sale--like-btn" aria-label="Добавить в избранные">
+            <svg xmlns="http://www.w3.org/2000/svg" class="sale--icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M16.8398 3C15.093 3 13.5616 3.77893 12.4113 5.25262C12.2579 5.44917 12.1212 5.64579 12 5.83623C11.8788 5.64575 11.7421 5.44917 11.5887 5.25262C10.4384 3.77893 8.90701 3 7.16016 3C3.8602 3 1.5 5.7631 1.5 9.07868C1.5 12.8699 4.60722 16.4429 11.575 20.664C11.7056 20.7431 11.8528 20.7827 12 20.7827C12.1472 20.7827 12.2944 20.7431 12.425 20.664C19.3928 16.443 22.5 12.8699 22.5 9.07872C22.5 5.76486 20.1417 3 16.8398 3Z" fill="#E4E4E4"/>
+            </svg>
+          </button>
+          <a href="#" class="sale--item-link">
+            <div class="sale--img-wrap">
+              <img src="../cedro/IMG/image 24.png" class="sale--img"  alt=""  width="256" height="256">
+            </div>
+            <div class="sale--description-wrap">
+              <h3 class="sale--name">Brown to Blonde</h3>
+              <p class="sale--description">Пигмент для бровей</p>
+              <p class="sale--description">12 ml.</p>
+              <div class="sale--wrap-price">
+                <p class="sale--price">1 500 ₽</p>
+                <p class="sale--price sale--price-old">3 000 ₽</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="sale--item sale--item-sale">
+          <button class="sale--like-btn" aria-label="Добавить в избранные">
+            <svg xmlns="http://www.w3.org/2000/svg" class="sale--icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M16.8398 3C15.093 3 13.5616 3.77893 12.4113 5.25262C12.2579 5.44917 12.1212 5.64579 12 5.83623C11.8788 5.64575 11.7421 5.44917 11.5887 5.25262C10.4384 3.77893 8.90701 3 7.16016 3C3.8602 3 1.5 5.7631 1.5 9.07868C1.5 12.8699 4.60722 16.4429 11.575 20.664C11.7056 20.7431 11.8528 20.7827 12 20.7827C12.1472 20.7827 12.2944 20.7431 12.425 20.664C19.3928 16.443 22.5 12.8699 22.5 9.07872C22.5 5.76486 20.1417 3 16.8398 3Z" fill="#E4E4E4"/>
+            </svg>
+          </button>
+          <a href="#" class="sale--item-link">
+            <div class="sale--img-wrap">
+              <img src="../cedro/IMG/image 24.png" class="sale--img"  alt=""  width="256" height="256">
+            </div>
+            <div class="sale--description-wrap">
+              <h3 class="sale--name">Brown to Blonde</h3>
+              <p class="sale--description">Пигмент для бровей</p>
+              <p class="sale--description">12 ml.</p>
+              <div class="sale--wrap-price">
+                <p class="sale--price">1 500 ₽</p>
+                <p class="sale--price sale--price-old">3 000 ₽</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="sale--item sale--item-free-delivery">
+          <button class="sale--like-btn" aria-label="Добавить в избранные">
+            <svg xmlns="http://www.w3.org/2000/svg" class="sale--icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M16.8398 3C15.093 3 13.5616 3.77893 12.4113 5.25262C12.2579 5.44917 12.1212 5.64579 12 5.83623C11.8788 5.64575 11.7421 5.44917 11.5887 5.25262C10.4384 3.77893 8.90701 3 7.16016 3C3.8602 3 1.5 5.7631 1.5 9.07868C1.5 12.8699 4.60722 16.4429 11.575 20.664C11.7056 20.7431 11.8528 20.7827 12 20.7827C12.1472 20.7827 12.2944 20.7431 12.425 20.664C19.3928 16.443 22.5 12.8699 22.5 9.07872C22.5 5.76486 20.1417 3 16.8398 3Z" fill="#E4E4E4"/>
+            </svg>
+          </button>
+          <a href="#" class="sale--item-link">
+            <div class="sale--img-wrap">
+              <img src="../cedro/IMG/image 24.png" class="sale--img"  alt=""  width="256" height="256">
+            </div>
+            <div class="sale--description-wrap">
+              <h3 class="sale--name">Brown to Blonde</h3>
+              <p class="sale--description">Пигмент для бровей</p>
+              <p class="sale--description">12 ml.</p>
+              <div class="sale--wrap-price">
+                <p class="sale--price">1 500 ₽</p>
+                <p class="sale--price sale--price-old">3 000 ₽</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="sale--item sale--item-sale">
+          <button class="sale--like-btn" aria-label="Добавить в избранные">
+            <svg xmlns="http://www.w3.org/2000/svg" class="sale--icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M16.8398 3C15.093 3 13.5616 3.77893 12.4113 5.25262C12.2579 5.44917 12.1212 5.64579 12 5.83623C11.8788 5.64575 11.7421 5.44917 11.5887 5.25262C10.4384 3.77893 8.90701 3 7.16016 3C3.8602 3 1.5 5.7631 1.5 9.07868C1.5 12.8699 4.60722 16.4429 11.575 20.664C11.7056 20.7431 11.8528 20.7827 12 20.7827C12.1472 20.7827 12.2944 20.7431 12.425 20.664C19.3928 16.443 22.5 12.8699 22.5 9.07872C22.5 5.76486 20.1417 3 16.8398 3Z" fill="#E4E4E4"/>
+            </svg>
+          </button>
+          <a href="#" class="sale--item-link">
+            <div class="sale--img-wrap">
+              <img src="../cedro/IMG/image 24.png" class="sale--img"  alt=""  width="256" height="256">
+            </div>
+            <div class="sale--description-wrap">
+              <h3 class="sale--name">Brown to Blonde</h3>
+              <p class="sale--description">Пигмент для бровей</p>
+              <p class="sale--description">12 ml.</p>
+              <div class="sale--wrap-price">
+                <p class="sale--price">1 500 ₽</p>
+                <p class="sale--price sale--price-old">3 000 ₽</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="sale--item sale--item-sale">
+          <button class="sale--like-btn" aria-label="Добавить в избранные">
+            <svg xmlns="http://www.w3.org/2000/svg" class="sale--icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M16.8398 3C15.093 3 13.5616 3.77893 12.4113 5.25262C12.2579 5.44917 12.1212 5.64579 12 5.83623C11.8788 5.64575 11.7421 5.44917 11.5887 5.25262C10.4384 3.77893 8.90701 3 7.16016 3C3.8602 3 1.5 5.7631 1.5 9.07868C1.5 12.8699 4.60722 16.4429 11.575 20.664C11.7056 20.7431 11.8528 20.7827 12 20.7827C12.1472 20.7827 12.2944 20.7431 12.425 20.664C19.3928 16.443 22.5 12.8699 22.5 9.07872C22.5 5.76486 20.1417 3 16.8398 3Z" fill="#E4E4E4"/>
+            </svg>
+          </button>
+          <a href="#" class="sale--item-link">
+            <div class="sale--img-wrap">
+              <img src="../cedro/IMG/image 24.png" class="sale--img"  alt=""  width="256" height="256">
+            </div>
+            <div class="sale--description-wrap">
+              <h3 class="sale--name">Brown to Blonde</h3>
+              <p class="sale--description">Пигмент для бровей</p>
+              <p class="sale--description">12 ml.</p>
+              <div class="sale--wrap-price">
+                <p class="sale--price">1 500 ₽</p>
+                <p class="sale--price sale--price-old">3 000 ₽</p>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <footer class="footer">
+      <ul class="footer--list">
+        <li class="footer--item">
+          <a class="footer--subtitle">Продукция</a>
+          <ul class="footer--sublist">
+            <li class="footer--subitem">
+              <a class="footer--link" href="#">Пигменты</a>
+            </li>
+            <li class="footer--subitem">
+              <a class="footer--link" href="#">Пигменты</a>
+            </li>
+            <li class="footer--subitem">
+              <a class="footer--link" href="#">Аппараты</a>
+            </li>
+            <li class="footer--subitem">
+              <a class="footer--link" href="#">Иглы</a>
+            </li>
+            <li class="footer--subitem">
+              <a class="footer--link" href="#">Расходные материалы</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer--item">
+          <a class="footer--subtitle">Компания</a>
+          <ul class="footer--sublist">
+            <li class="footer--subitem">
+              <a class="footer--link" href="#">Блог</a>
+            </li>
+            <li class="footer--subitem">
+              <a class="footer--link" href="#">Обучение</a>
+            </li>
+            <li class="footer--subitem">
+              <a class="footer--link" href="#">Стать представителем</a>
+            </li>
+            <li class="footer--subitem">
+              <a class="footer--link" href="#">Контакты</a>
+            </li>
+            <li class="footer--subitem">
+              <a class="footer--link" href="#">Политика конфиденциальности</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer--item">
+          <a class="footer--subtitle">Контакты</a>
+          <ul class="footer--sublist">
+            <li class="footer--subitem">
+              <a class="footer--link" href="tel:88005553535">
+                <svg xmlns="http://www.w3.org/2000/svg" class="footer--icon" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                  <path d="M5.95133 7.47489C6.68115 8.75704 7.74296 9.81885 9.02511 10.5487L9.71267 9.58578C9.82323 9.43095 9.98672 9.32202 10.1722 9.27959C10.3576 9.23717 10.5522 9.26419 10.7191 9.35556C11.8191 9.95672 13.0339 10.3183 14.2837 10.4164C14.4787 10.4319 14.6608 10.5203 14.7935 10.664C14.9263 10.8077 15 10.9962 15 11.1919V14.6623C15 14.8549 14.9286 15.0406 14.7996 15.1836C14.6706 15.3266 14.4931 15.4166 14.3016 15.4362C13.8893 15.479 13.474 15.5 13.0556 15.5C6.39778 15.5 1 10.1022 1 3.44444C1 3.026 1.021 2.61067 1.06378 2.19844C1.08342 2.00688 1.17343 1.82941 1.31639 1.70038C1.45935 1.57136 1.64509 1.49996 1.83767 1.5H5.30811C5.50377 1.49998 5.69225 1.5737 5.83597 1.70646C5.9797 1.83923 6.0681 2.02128 6.08356 2.21633C6.18173 3.46606 6.54328 4.68086 7.14444 5.78089C7.23581 5.94777 7.26283 6.14235 7.22041 6.32782C7.17798 6.51328 7.06905 6.67677 6.91422 6.78733L5.95133 7.47489ZM3.98978 6.96389L5.46756 5.90844C5.04816 5.00318 4.76083 4.04243 4.61433 3.05556H2.56333C2.55867 3.18467 2.55633 3.31456 2.55633 3.44444C2.55556 9.24356 7.25644 13.9444 13.0556 13.9444C13.1854 13.9444 13.3153 13.9421 13.4444 13.9367V11.8857C12.4576 11.7392 11.4968 11.4518 10.5916 11.0324L9.53611 12.5102C9.11118 12.3451 8.69845 12.1502 8.301 11.9269L8.25589 11.9012C6.73034 11.033 5.467 9.76966 4.59878 8.24411L4.57311 8.199C4.34982 7.80155 4.15489 7.38882 3.98978 6.96389Z" fill="white"/>
+                </svg>
+                8 (800) 555-35-35
+              </a>
+            </li>
+            <li class="footer--subitem">
+              <a class="footer--link" href="mailto:cedro@yandex.ru">
+                <svg xmlns="http://www.w3.org/2000/svg" class="footer--icon" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                  <path d="M2.00065 2.5H14.0007C14.1775 2.5 14.347 2.57024 14.4721 2.69526C14.5971 2.82029 14.6673 2.98986 14.6673 3.16667V13.8333C14.6673 14.0101 14.5971 14.1797 14.4721 14.3047C14.347 14.4298 14.1775 14.5 14.0007 14.5H2.00065C1.82384 14.5 1.65427 14.4298 1.52925 14.3047C1.40422 14.1797 1.33398 14.0101 1.33398 13.8333V3.16667C1.33398 2.98986 1.40422 2.82029 1.52925 2.69526C1.65427 2.57024 1.82384 2.5 2.00065 2.5ZM13.334 5.32533L8.04865 10.0587L2.66732 5.31067V13.1667H13.334V5.32533ZM3.00798 3.83333L8.04132 8.27467L13.002 3.83333H3.00798Z" fill="white"/>
+                </svg>
+                cedro@yandex.ru
+              </a>
+            </li>
+            <li class="footer--subitem">
+              <a class="footer--link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="footer--icon" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                  <path d="M8 1.5C4.1402 1.5 1 4.6402 1 8.5C1 12.3598 4.1402 15.5 8 15.5C11.8598 15.5 15 12.3598 15 8.5C15 4.6402 11.8598 1.5 8 1.5ZM8 14.1C4.9123 14.1 2.4 11.5877 2.4 8.5C2.4 5.4123 4.9123 2.9 8 2.9C11.0877 2.9 13.6 5.4123 13.6 8.5C13.6 11.5877 11.0877 14.1 8 14.1Z" fill="white"/>
+                  <path d="M8.125 5.375H6.875V8.75875L8.93313 10.8169L9.81687 9.93312L8.125 8.24125V5.375Z" fill="white"/>
+                </svg>
+                Время работы: пн - пт с 10 до 19
+              </a>
+            </li>
+            <li class="footer--subitem">
+              <a href="#" class="footer--link footer--link-top">
+                <svg xmlns="http://www.w3.org/2000/svg" class="footer--icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8.00123 9.33272C9.4719 9.33272 10.6679 8.13672 10.6679 6.66606C10.6679 5.19539 9.4719 3.99939 8.00123 3.99939C6.53056 3.99939 5.33456 5.19539 5.33456 6.66606C5.33456 8.13672 6.53056 9.33272 8.00123 9.33272ZM8.00123 5.33272C8.73656 5.33272 9.33456 5.93072 9.33456 6.66606C9.33456 7.40139 8.73656 7.99939 8.00123 7.99939C7.2659 7.99939 6.6679 7.40139 6.6679 6.66606C6.6679 5.93072 7.2659 5.33272 8.00123 5.33272Z" fill="white"/>
+                <path d="M7.61332 14.5427C7.72932 14.6254 7.86465 14.6667 7.99999 14.6667C8.13532 14.6667 8.27065 14.6254 8.38665 14.5427C8.58932 14.3994 13.3527 10.96 13.3333 6.66671C13.3333 3.72604 10.9407 1.33337 7.99999 1.33337C5.05932 1.33337 2.66665 3.72604 2.66665 6.66337C2.64732 10.96 7.41065 14.3994 7.61332 14.5427ZM7.99999 2.66671C10.206 2.66671 12 4.46071 12 6.67004C12.014 9.62871 9.07465 12.2854 7.99999 13.1567C6.92599 12.2847 3.98599 9.62737 3.99999 6.66671C3.99999 4.46071 5.79399 2.66671 7.99999 2.66671Z" fill="white"/>
+              </svg>
+                г. Санкт-Петербург,<br />
+                м. Звездная</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="footer--wrap">
+        <ul class="footer--social-list">
+          <li class="footer--social-item">
+            <a class="footer--social-link footer--social-link-vk" aria-label="Вконтакте"></a>
+          </li>
+          <li class="footer--social-item">
+            <a
+              class="footer--social-link footer--social-link-fb"
+              aria-label="Фейсбук"
+            ></a>
+          </li>
+          <li class="footer--social-item">
+            <a class="footer--social-link footer--social-link-insta" aria-label="Инстаграм"></a>
+          </li>
+        </ul>
+        <a class="footer--copyright" href="#">&copy;&nbsp;Cedro&nbsp;&mdash; все права защищены, 2020</a>
+        <a class="footer--made" href="#">
+          Сделано в Cedro
+          <svg xmlns="http://www.w3.org/2000/svg" class="footer--icon" width="13" height="11" viewBox="0 0 13 11" fill="none">
+            <g opacity="0.4">
+              <path d="M5.86248 0H6.44968C6.48556 0 6.51997 0.0133702 6.54535 0.0371692C6.57072 0.0609682 6.58498 0.0932466 6.58498 0.126904V10.8731C6.58498 10.9068 6.57072 10.939 6.54535 10.9628C6.51997 10.9866 6.48556 11 6.44968 11H5.86248C5.09238 11 4.32983 10.8577 3.61838 10.5812C2.90694 10.3047 2.26054 9.89943 1.71612 9.38856C1.17171 8.87769 0.739937 8.27121 0.445479 7.60378C0.15102 6.93635 -0.000354833 6.22105 6.2456e-07 5.49873C6.2456e-07 4.04038 0.617653 2.64175 1.71708 1.61054C2.81651 0.579329 4.30766 0 5.86248 0Z" fill="white"/>
+              <path d="M12.862 0.000976562H8.20093C8.12471 0.000976562 8.06293 0.0589297 8.06293 0.130418V4.68627C8.06293 4.75776 8.12471 4.81571 8.20093 4.81571H12.862C12.9382 4.81571 13 4.75776 13 4.68627V0.130418C13 0.0589297 12.9382 0.000976562 12.862 0.000976562Z" fill="white"/>
+              <path d="M12.862 6.14453H8.20093C8.12471 6.14453 8.06293 6.20248 8.06293 6.27397V10.8666C8.06293 10.9381 8.12471 10.9961 8.20093 10.9961H12.862C12.9382 10.9961 13 10.9381 13 10.8666V6.27397C13 6.20248 12.9382 6.14453 12.862 6.14453Z" fill="white"/>
+            </g>
+           </svg>  
+        </a>
+      </div>
+      <p class="footer--text">
+        Обращаем ваше внимание на&nbsp;то, что данный интернет-сайт носит
+        исключительно информационный характер и&nbsp;ни&nbsp;при каких условиях
+        не&nbsp;является публичной офертой, определяемой положениями Статьи 437
+        (2) Гражданского кодекса Российской Федерации. Для получения подробной
+        информации о&nbsp;наличии и&nbsp;актуальной стоимости указанных
+        на&nbsp;сайте услуг обращайтесь, пожалуйста, по&nbsp;телефонам клиник.
+      </p>
+    </footer>
+  </body>
+</html>
