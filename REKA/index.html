@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudioCora</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+    <div class="cont">
+    <header class="header header-border">
+        <div class="container flex">
+            <div class="logo-phone">
+                <a href="tel:+78126459810" class="l-p">
+                    <img src="IMG/Vector (15).svg" alt="" width="20.04" height="20">
+                </a>
+            </div>
+            <div class="logo">
+            </div>
+            <div class="mobile">
+                <div class="bg">
+                    <div class="menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Архитектура</a></li>
+                        <li><a href="#">Дизайн интерьера</a></li>
+                        <li><a href="#">Галерея</a></li>
+                        <li><a href="#">Сотрудничество</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </nav>
+                </div>
+            </div>
+
+            <script>
+                let menuBtn = document.querySelector('.menu-btn');
+                let menu = document.querySelector('.menu');
+
+                menuBtn.addEventListener('click', function(){
+                    menuBtn.classList.toggle('active');
+                    menu.classList.toggle('active');
+                })
+            </script>
+            
+            <nav class="nav">
+                <ul class="header-nav list-reset flex">
+                    <li class="header-nav-item">
+                        <a href="#" class="header-nav-it"> 
+                            О&nbsp;КОМПАНИИ
+                        </a> 
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="#" class="header-nav-it"> 
+                            АРХИТЕКТУРА
+                        </a> 
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="#" class="header-nav-it"> 
+                            ДИЗАЙН ИНТЕРЬЕРА
+                        </a> 
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="#" class="header-nav-it"> 
+                            ГАЛЕРЕЯ
+                        </a> 
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="#" class="header-nav-it"> 
+                            СОТРУДНИЧЕСТВО
+                        </a> 
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="#" class="header-nav-it"> 
+                            КОНТАКТЫ
+                        </a> 
+                    </li>
+                </ul>
+            </nav>
+            <div class="phone">
+                <a href="tel:+78126459810" class="header-nav-ite">
+                    +7 (812) 645 98 10
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="naming">
+        <div class="naming-font">
+            <h3 class="slogan">МЕНЯЕМ КАЧЕСТВО ЖИЗНИ</h3>
+            <h1 class="first-name" >АРХИТЕКТУРА</h1>
+            <!-- <img src="IMG/Rectangle 271.png" class="line" alt=""> -->
+            <h1 class="second-name">ДИЗАЙН ИНТЕРЬЕРА</h1>
+        </div>
+    </main>
+</div>
+<div class="projects">
+    <h4 class="proj">
+        Проекты
+    </h4>
+
+    <!-- Slick-slider - в нем удается реализовать центрирование, 
+    чтобы были видны частично соседние слайды -->
+
+    <!-- <div class="slider1 single-item">
+        <div>
+            <img src="IMG/111.jpeg" alt="" width="1310" height="770">
+        </div>
+        <div>
+            <img src="IMG/222.jpeg" alt="" width="1310" height="770">
+        </div>
+        <div>
+            <img src="IMG/333.jpeg" alt="" width="1310" height="770">
+        </div>
+     
+    </div>
+    <script>
+           $(document).ready(function() {
+  $('.slider1').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 4,
+    centerMode: true,
+    vertical: false,
+  });
+           });   
+    </script> -->
+    
+    <!-- В данном слайдере не удалось найти/сделать свойство как в Slick-slider -->
+
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="IMG/111.jpeg" alt="" width="1310" height="770">
+                <a href="file:///Users/vladimirvinogradov/Desktop/HTML&CSS&JS/REKA/index_2.html" target="_blank">
+                    <div id="title"></div>
+                </a>
+                <div id="body"></div>
+            </div>
+            <div class="swiper-slide">
+                <img src="IMG/222.jpeg" alt="" width="1310" height="770">
+                <a href="" target="">
+                    <div id="title1"></div>
+                </a>
+                <div id="body1"></div>
+            </div>
+            <div class="swiper-slide">
+                <img src="IMG/333.jpeg" alt="" width="1310" height="770">
+                <a href="" target="">
+                    <div id="title2"></div>
+                </a>
+                <div id="body2"></div>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div> 
+    <script>
+        const swiper = new Swiper('.swiper', {
+        direction: 'horizontal',
+        slidesPerView: 1.2,
+        centeredSlides:true,
+        spaceBetween: 115,
+        grabCursor: true,
+        // autoplay:true,
+        interval:10000,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        keyboard: {
+            enabled:true,
+            onlyInViewport:true,
+            pageUpDown:true,
+        },
+
+        // breakpoints: {
+        //     992: {
+        //         slidesPerView: 1,
+        //     }
+        // },
+        });
+    </script>  
+    
+</div>
+
+<div class="contacts">
+
+</div>
+<footer class="footer">
+
+</footer>
+
+<script src="./script.js"></script>
+
+
+<script type="text/javascript">
+    var response = httpGet("https://jsonplaceholder.typicode.com/posts")
+    var responseObj = JSON.parse(response)
+    console.log(responseObj[0].title);
+    console.log(responseObj[0].body);
+    console.log(responseObj[1].title);
+    console.log(responseObj[1].body);
+    console.log(responseObj[2].title);
+    console.log(responseObj[2].body);
+
+
+    document.querySelector('#title').innerHTML = responseObj[0].title
+    document.querySelector('#body').innerHTML = responseObj[0].body
+    document.querySelector('#title1').innerHTML = responseObj[1].title
+    document.querySelector('#body1').innerHTML = responseObj[1].body
+    document.querySelector('#title2').innerHTML = responseObj[2].title
+    document.querySelector('#body2').innerHTML = responseObj[2].body
+  
+  
+
+    function httpGet(theUrl)
+    {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", theUrl, false ); 
+        xmlHttp.send( null );
+        return xmlHttp.responseText;
+    }
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
+
+</body>
+</html>
