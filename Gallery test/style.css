@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family:  'Outfit', sans-serif;
+}
+
+.gallery-main {
+  text-align: center;
+}
+
+#myModal {
+	width: 800px; 
+  height: 550px;
+  margin: 0 auto;
+  padding: 18px 9px;
+	border-radius: 4px;
+	background: #fafafa;
+	position: fixed;
+	top: 0;	left: 0; right: 0; bottom: 0;
+  margin: auto;
+	display: none;
+	opacity: 0;
+	z-index: 38;
+  text-align: center;
+}
+
+#myModal #myModal__close {
+	width: 21px; height: 21px;
+	position: absolute;
+	top: 1px;	right: 11px;
+	cursor: pointer;
+	display: block;
+  font-size: 29px;
+}
+
+#myOverlay {
+	z-index: 37;
+	position: fixed;
+	background-color: rgba(0,0,0,.7);
+	width: 100%; height: 100%;
+	top: 0; left: 0;
+	cursor :pointer;
+	display :none;
+}
+
+h1.title{
+  font-size: 44px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 45px;
+  position: relative;
+}
+
+h1.title:after{
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: #111111;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section.gallery {
+  position: relative;
+  padding: 50px 0;
+}
+
+.header--action-link {
+  width: 32px;
+  height: 32px;
+}
+
+.header--action-link:hover .header--icon path {
+  stroke: #21242e;
+}
+
+.header--action-link:hover {
+  stroke: none;
+  fill: #21242e;
+}
+
+.header--icon path {
+  stroke: #d0bc7a;
+}
+
+.header--icon path {
+  transition: stroke 0.4s ease, fill 0.4s ease;
+}
+
+.form-area {
+  width: 780px;
+}
+
+.picture {
+  width: 780px;
+  height: 400px;
+}
+
+
+
+@media (max-width: 991px){
+    .gallery-img{
+      flex: 33.3%;
+    }
+
+    #myModal {
+      width: 700px;
+      height: 520px;
+    }
+
+    .form-area {
+      width: 680px;
+    }
+
+    .picture {
+      width: 680px;
+      height: 370px;
+    }
+  }
+  @media (max-width: 768px){
+    .gallery-img{
+      flex: 50%;
+    }
+    #myModal {
+      width: 600px;
+      height: 450px;
+    }
+
+    .form-area {
+      width: 580px;
+    }
+
+    .picture {
+      width: 580px;
+      height: 300px;
+    }
+  }
+
+  @media (max-width: 650px){
+    .gallery-img{
+      flex: 100%;
+    }
+
+    #myModal {
+      width: 500px;
+      height: 380px;
+    }
+
+    .form-area {
+      width: 480px;
+    }
+
+    .picture {
+      width: 480px;
+      height: 230px;
+    }
+  }
+
+  @media (max-width: 390px){
+    .gallery-img{
+      flex: 100%;
+    }
+
+    #myModal {
+      width: 320px;
+      height: 320px;
+    }
+
+    .form-area {
+      width: 300px;
+    }
+
+    .picture {
+      width: 300px;
+      height: 170px;
+    }
+  }
