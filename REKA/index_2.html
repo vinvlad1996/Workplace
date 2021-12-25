@@ -95,6 +95,15 @@
         <img src="IMG/111.jpeg" class="first" alt=""> 
     </main>
     <script type="text/javascript">
+      const id = window.location.search;
+      
+      fetch(`https://jsonplaceholder.typicode.com/posts/${id.split('=')[1]}`)
+        .then(data => data.text())
+        .then(response => {
+          const res = JSON.parse(response);
+          document.getElementById('title').innerText = res.title;
+        });
+      
         var response = httpGet("https://jsonplaceholder.typicode.com/posts")
         var responseObj = JSON.parse(response)
         console.log(responseObj[0].title);
@@ -102,7 +111,6 @@
     
         document.querySelector('#title').innerHTML = responseObj[0].title
         document.querySelector('#body').innerHTML = responseObj[0].body
-  
     
         function httpGet(theUrl)
         {

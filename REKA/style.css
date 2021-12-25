@@ -18,7 +18,8 @@ img {
 }
 
 body {
-    width: 1920px;
+    /*width: 1920px;*/
+    margin: 0;
 }
 
 .flex {
@@ -30,7 +31,7 @@ body {
 }
 
 .cont {
-    width: 1920px;
+    /*width: 1920px;*/
     height: 900px;
     background-image: url('../REKA/IMG/img-slider-1\ \(1\).jpg  ');
     background-repeat: no-repeat;
@@ -58,7 +59,7 @@ body {
 }
 /* scroll */
 .header-fixed {
-    width: 1920px;
+    /*width: 1920px;*/
     position: fixed;
     top: 0;
     left: 0;
@@ -166,12 +167,25 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 60px;
+    position: relative;
+}
+
+.first-name:before,
+.proj:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 99px;
+    height: 1px;
+    background: red;
+    left: calc(50% - 49px);
+    bottom: 1px;
 }
 
 .projects {
     font-family: Cormorant Garamond;
     height: 1100px;
-    width: 1920px;
+    /*width: 1920px;*/
 }
 
 .proj {
@@ -186,6 +200,7 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #131217;
+    position: relative;
 }
 
 
@@ -199,8 +214,8 @@ body {
 } */
 
 .swiper {
-    width: 1320px;
-    height: 1070px;
+    /*width: 1320px;*/
+    /*height: 1070px;*/
 } 
 
 
@@ -225,9 +240,14 @@ body {
     line-height: 128%;
 }
 
-
 .slider1 {
  width: 500px; 
 
 
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
