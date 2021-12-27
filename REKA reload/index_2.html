@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0</title>
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_2.css">
+</head>
+<body>
+    <header class="header header1">
+        <div class="container flex">
+            <div class="logo1">
+            </div>
+            <div class="mobile">
+                <div class="bg">
+                    <div class="menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Архитектура</a></li>
+                        <li><a href="#">Дизайн интерьера</a></li>
+                        <li><a href="#">Галерея</a></li>
+                        <li><a href="#">Сотрудничество</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </nav>
+                </div>
+            </div>
+
+            <script>
+                let menuBtn = document.querySelector('.menu-btn');
+                let menu = document.querySelector('.menu');
+
+                menuBtn.addEventListener('click', function(){
+                    menuBtn.classList.toggle('active');
+                    menu.classList.toggle('active');
+                })
+            </script>
+            
+            <nav class="nav">
+                <ul class="header-nav list-reset flex">
+                    <li class="header-nav-item">
+                        <a href="#" class="header-nav-i"> 
+                            О&nbsp;КОМПАНИИ
+                        </a> 
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="#" class="header-nav-i"> 
+                            АРХИТЕКТУРА
+                        </a> 
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="#" class="header-nav-i"> 
+                            ДИЗАЙН ИНТЕРЬЕРА
+                        </a> 
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="#" class="header-nav-i"> 
+                            ГАЛЕРЕЯ
+                        </a> 
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="#" class="header-nav-i"> 
+                            СОТРУДНИЧЕСТВО
+                        </a> 
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="#" class="header-nav-i"> 
+                            КОНТАКТЫ
+                        </a> 
+                    </li>
+                </ul>
+            </nav>
+            <div class="phone">
+                <a href="tel:+78126459810" class="header-nav-ite">
+                    +7 (812) 645 98 10
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="api">
+            <div id="title"></div>
+        <div class="main-body">
+            <div id="body"></div>
+        </div>
+        </div> 
+        <img src="IMG/111.jpeg" class="first" alt=""> 
+    </main>
+    <script type="text/javascript">
+        var response = httpGet("https://jsonplaceholder.typicode.com/posts")
+        var responseObj = JSON.parse(response)
+        console.log(responseObj[0].title);
+        console.log(responseObj[0].body);
+    
+        document.querySelector('#title').innerHTML = responseObj[0].title
+        document.querySelector('#body').innerHTML = responseObj[0].body
+  
+    
+        function httpGet(theUrl)
+        {
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.open( "GET", theUrl, false ); 
+            xmlHttp.send( null );
+            return xmlHttp.responseText;
+        }
+    </script>
+</body>
+</html>

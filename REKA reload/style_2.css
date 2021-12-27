@@ -1,0 +1,25 @@
+body {
+    background: #E5E5E5;
+}
+
+.header-nav-i,
+.header-nav-ite {
+    color: #757470;
+}
+
+.logo1 {
+    background-image: url('../REKA/IMG/Vector\ \(5\).png');
+    background-repeat: no-repeat;
+    width: 272px;
+    height: 28px;
+    margin-left: 95px;
+    margin-right: 164px;
+}
+
+.header1 {
+    padding-bottom: 111px;
+}
+
+.main {
+    text-align: center;
+}
