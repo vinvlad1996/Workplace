@@ -1,0 +1,144 @@
+body {
+    background: #E5E5E5;
+}
+
+.header-nav-i,
+.header-nav-ite {
+    color: #757470;
+}
+
+.logo1 {
+    background-image: url('../REKA/IMG/Vector\ \(5\).png');
+    background-repeat: no-repeat;
+    background-size: 272px 28px;
+    width: 272px;
+    height: 28px;
+    margin-left: 95px;
+    margin-right: 164px;
+}
+
+.header1 {
+    padding-bottom: 111px;
+}
+
+.main {
+    text-align: center;
+}
+
+@media (max-width:1800px) {
+    .logo1 {
+        margin-left: 30px;
+        margin-right: 70px;
+    }
+    .nav {
+        padding-right: 100px;
+    }
+
+    .header-nav-item:not(:last-child) {
+        margin-right: 27px;
+      }
+}
+
+@media (max-width:1471px) {
+    .logo1 {
+        background-size: 230px 26px;
+        width: 230px;
+        margin-left: 10px;
+        margin-right: 40px;
+    }
+    .nav {
+        padding-right: 50px;
+    }
+
+    .header-nav-item:not(:last-child) {
+        margin-right: 24px;
+      }
+
+      .header-nav-item {
+        font-size: 13px;
+        line-height: 16px;
+      }
+
+      .header-nav-ite {
+        font-size: 14px;
+        line-height: 16px;
+      }
+}
+
+@media (max-width:1197px) {
+    .logo1 {
+        background-size: 200px 24px;
+        width: 200px;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+    .nav {
+        padding-right: 20px;
+    }
+
+    .header-nav-item:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      .header-nav-item {
+        font-size: 11px;
+        line-height: 14px;
+      }
+
+      .header-nav-ite {
+        font-size: 12px;
+        line-height: 14px;
+      }
+
+      .header-nav {
+        padding-left: 0;
+      }
+}
+
+@media (max-width:898px) {
+    .logo1 {
+        background-size: 200px 24px;
+        width: 200px;
+        margin-left: 350px;
+    }
+    .nav,
+    .header-nav-ite {
+        display: none;
+    }
+}
+
+@media (max-width:800px) {
+    .logo1 {
+        background-size: 200px 24px;
+        width: 200px;
+        margin-left: 250px;
+    }
+    .nav,
+    .header-nav-ite {
+        display: none;
+    }
+}
+
+@media (max-width:650px) {
+    .logo1 {
+        background-size: 200px 24px;
+        width: 200px;
+        margin-left: 150px;
+    }
+    .nav,
+    .header-nav-ite {
+        display: none;
+    }
+}
+
+@media (max-width:460px) {
+    .logo1 {
+        background-size: 200px 24px;
+        width: 200px;
+        margin-left: 50px;
+    }
+    .nav,
+    .header-nav-ite {
+        display: none;
+    }
+}
